@@ -9,6 +9,7 @@ public class ReversedList {
         while (current != null) {
             next = current.getNext();
             current.setNext(previous);
+
             previous = current;
             current = next;
         }
